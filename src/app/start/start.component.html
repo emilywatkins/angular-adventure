@@ -1,0 +1,24 @@
+<form id="startForm">
+  <div class="form-group">
+    <label>Character Name</label>
+    <input #newName class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Weapon</label>
+    <select #newWeapon>
+      <option value="Shortsword">Shortsword</option>
+      <option value="Mace">Mace</option>
+      <option value="Gun">Gun</option>
+      <option value="NoWeapon">No Weapon</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Backstory</label>
+    <select #newBackstory>
+      <option value="story1">story1</option>
+      <option value="story2">story2</option>
+      <option value="story3">story3</option>
+    </select>
+  </div>
+  <button type="button" (click)="submitForm(newName.value, newWeapon.value, newBackstory.value); newName.value=''; newWeapon.value=''; newBackstory.value='';">Create Character</button>
+</form>
