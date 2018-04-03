@@ -22,3 +22,8 @@
   </div>
   <button type="button" (click)="submitForm(newName.value, newWeapon.value, newBackstory.value); newName.value=''; newWeapon.value=''; newBackstory.value='';">Create Character</button>
 </form>
+
+<h2>summary</h2>
+<div *ngFor="let player of players | async" (click)="startGame(player)">
+  <h4>{{player.name}}</h4>
+</div>

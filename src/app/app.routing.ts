@@ -6,7 +6,11 @@ const appRoutes: Routes = [
   {
     path: '',
     component: StartComponent
-  }
+  },
+  // {
+  //   path: 'stage1/:id',
+  //   component: Stage1Component
+  // }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
