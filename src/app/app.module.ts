@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
 import { routing } from './app.routing';
 import { Stage1Component } from './stage1/stage1.component';
+import { Stage2_1Component } from './stage2.1/stage2.1.component';
+import { Stage2_2Component } from './stage2.2/stage2.2.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +24,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     StartComponent,
-    Stage1Component
+    Stage1Component,
+    Stage2_1Component, Stage2_2Component
   ],
   imports: [
     BrowserModule,
