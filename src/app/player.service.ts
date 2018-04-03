@@ -19,6 +19,6 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
     }
 
     getPlayerById(playerId: string) {
-      return this.db.object('stage1/' + playerId);
+      return this.db.object('players/' + playerId);
     }
   }
