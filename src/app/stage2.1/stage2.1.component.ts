@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Player } from '../player.model';
 import { PlayerService } from '../player.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-stage2',
@@ -18,7 +19,8 @@ export class Stage2_1Component implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private playerService: PlayerService
+    private playerService: PlayerService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -26,5 +28,13 @@ export class Stage2_1Component implements OnInit {
       this.playerId = URLParameters['id'];
     });
     this.playerToDisplay = this.playerService.getPlayerById(this.playerId);
+  }
+
+  choice1() {
+    this.router.navigate(['stage3_1', this.playerId]);
+  }
+
+  choice2() {
+    this.router.navigate(['stage3_2', this.playerId]);
   }
 }

@@ -11,6 +11,10 @@ import { routing } from './app.routing';
 import { Stage1Component } from './stage1/stage1.component';
 import { Stage2_1Component } from './stage2.1/stage2.1.component';
 import { Stage2_2Component } from './stage2.2/stage2.2.component';
+import { Stage3_1Component } from './stage3-1/stage3-1.component';
+import { Stage3_2Component } from './stage3-2/stage3-2.component';
+import { Stage3_3Component } from './stage3-3/stage3-3.component';
+import { Stage3_4Component } from './stage3-4/stage3-4.component';
 
 
 export const firebaseConfig = {
@@ -25,7 +29,7 @@ export const firebaseConfig = {
     AppComponent,
     StartComponent,
     Stage1Component,
-    Stage2_1Component, Stage2_2Component
+    Stage2_1Component, Stage2_2Component, Stage3_1Component, Stage3_2Component, Stage3_3Component, Stage3_4Component
   ],
   imports: [
     BrowserModule,
